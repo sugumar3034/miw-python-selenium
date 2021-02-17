@@ -6,14 +6,13 @@ from pages.ritchie_search_result_page import RitchieSearchResultPage
 from config.config import Config
 import logging
 import utilities.custom_logger as cl
-import time
 
 
 class RitchieSecondTests:
     log = cl.customLogger(logging.DEBUG)
 
     @mark.RitchieSecondTest
-    @mark.Ritche
+    @mark.Ritchie
     def test_ritchie_two(self, driver, config: Config):
         ritchie_home_page = RitchieHomePage(driver, domain=config.url)
         # Navigate to home page and click on sign in link

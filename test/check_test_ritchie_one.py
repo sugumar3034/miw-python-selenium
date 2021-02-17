@@ -12,7 +12,7 @@ class RitchieOneTests:
     log = cl.customLogger(logging.DEBUG)
 
     @mark.RitchieFirstTest
-    @mark.Ritche
+    @mark.Ritchie
     def test_ritchie_one(self, driver, config: Config):
         ritchie_home_page = RitchieHomePage(driver, domain=config.url)
         # Navigate to home page and click on sign in link
